@@ -1,0 +1,7 @@
+{
+  "name": "Wellin AI Pre-Consultation",
+  "description": "An AI-powered pre-consultation tool to help foreign residents in Korea prepare for their medical visits. The app guides users through a structured questionnaire and generates a bilingual summary for clinicians.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
