@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/wellin/',
+      base: mode === 'production' ? '/wellin/' : '/',
       plugins: [react()],
       resolve: {
         alias: {
