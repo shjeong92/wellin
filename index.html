@@ -3,109 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wellin</title>
-  
-  <!-- Iconify for Carbon Icons -->
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Wellin - Redirecting...</title>
 
-  <!-- CSS variables for Theming -->
+  <!-- Immediate redirect -->
+  <meta http-equiv="refresh" content="0; url=https://wellin-88x8dm07v-jaden-jeongs-projects.vercel.app">
+
+  <!-- Canonical URL for SEO -->
+  <link rel="canonical" href="https://wellin-88x8dm07v-jaden-jeongs-projects.vercel.app">
+
   <style>
-    html {
-      font-size: 14px; /* Set base font size for correct rem calculation */
-    }
     body {
-      font-size: 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-align: center;
     }
-    :root {
-      --background: #f8fafc; /* slate-50 */
-      --foreground: #0f172a; /* slate-900 */
-      --card-background: #ffffff; /* white */
-      --card-foreground: #0f172a;
-      --primary: #0ea5e9; /* sky-500 */
-      --primary-foreground: #ffffff;
-      --secondary: #e2e8f0; /* slate-200 */
-      --secondary-foreground: #0f172a;
-      --muted: #f1f5f9; /* slate-100 */
-      --muted-foreground: #64748b; /* slate-500 */
-      --border: #e2e8f0; /* slate-200 */
-      --input: #cbd5e1; /* slate-300 */
-      --ring: #0ea5e9;
-      --danger: #ef4444; /* red-500 */
-      --danger-foreground: #ffffff;
-      --danger-secondary: #fee2e2; /* red-50 */
+    .container {
+      max-width: 400px;
+      padding: 2rem;
     }
-
-    .dark {
-      --background: #09090b; /* zinc-950 */
-      --foreground: #fafafa; /* zinc-50 */
-      --card-background: #18181b; /* zinc-900 */
-      --card-foreground: #fafafa; /* zinc-50 */
-      --primary: #38bdf8; /* sky-400 */
-      --primary-foreground: #09090b; /* zinc-950 */
-      --secondary: #27272a; /* zinc-800 */
-      --secondary-foreground: #fafafa; /* zinc-50 */
-      --muted: #09090b; /* zinc-950 */
-      --muted-foreground: #a1a1aa; /* zinc-400 */
-      --border: #27272a; /* zinc-800 */
-      --input: #3f3f46; /* zinc-700 */
-      --ring: #38bdf8;
-      --danger: #f87171; /* red-400 */
-      --danger-foreground: #18181b; /* zinc-900 */
-      --danger-secondary: #450a0a; /* red-950 */
+    .spinner {
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top: 3px solid white;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
     }
-    .shadow-upper {
-      box-shadow: 0 -2px 8px -1px rgb(0 0 0 / 0.06);
-      border-color: var(--border);
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
-    
-    input[type="date"] {
-      color-scheme: light;
-    }
-    .dark input[type="date"] {
-      color-scheme: dark;
+    a {
+      color: white;
+      text-decoration: underline;
     }
   </style>
-  <script type="module" crossorigin src="/wellin/assets/index-xbi70n5u.js"></script>
 </head>
-<body class="bg-[var(--background)]">
-  <div id="root"></div>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <h1>Wellin</h1>
+    <p>Redirecting to our new location...</p>
+    <p>If you're not redirected automatically, <a href="https://wellin-88x8dm07v-jaden-jeongs-projects.vercel.app">click here</a>.</p>
+  </div>
 
-  <!-- SPA redirect script for GitHub Pages -->
-  <script type="text/javascript">
-    // Single Page Apps for GitHub Pages
-    // MIT License
-    // https://github.com/rafgraph/spa-github-pages
-    // This script checks to see if a redirect is present in the query string,
-    // converts it back into the correct url and adds it to the
-    // browser's history using window.history.replaceState(...),
-    // which won't cause the browser to attempt to load the new url.
-    // When the single page app is loaded further down in this file,
-    // the correct url will be waiting in the browser's history for
-    // the single page app to route accordingly.
-    (function(l) {
-      if (l.search[1] === '/' ) {
-        var decoded = l.search.slice(1).split('&').map(function(s) { 
-          return s.replace(/~and~/g, '&')
-        }).join('?');
-        window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-        );
-      }
-    }(window.location))
-  </script>
-
-  <!-- Theme loader script to prevent FOUC -->
   <script>
-    (function() {
-      const theme = localStorage.getItem('wellin-theme');
-      if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      }
-    })();
+    // JavaScript redirect as backup
+    setTimeout(() => {
+      window.location.href = 'https://wellin-88x8dm07v-jaden-jeongs-projects.vercel.app';
+    }, 1000);
   </script>
-
 </body>
 </html>
